@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/noitemfound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Item Found"
+        android:layout_centerInParent="true"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        android:visibility="gone"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemsavailable"
+        android:layout_width="wrap_content"
+        app:cardBackgroundColor="#000"
+        app:cardCornerRadius="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:text="Items are available on this page for 14 days since they were claimed"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7.0dip" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv"
+                android:paddingTop="7.0dip" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv2"
+                android:paddingTop="7.0dip" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv3"
+                android:paddingTop="7.0dip" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv4"
+                android:paddingTop="7.0dip" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv5"
+                android:paddingTop="7.0dip"
+                android:layout_marginBottom="100dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appointment"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Book an appointment"
+        android:textSize="28sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:gravity="center_horizontal"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#fff"/>
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext_shape_two"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Appointment time"
+        android:inputType="textPersonName" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#fff"/>
+    <EditText
+        android:id="@+id/type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext_shape_two"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Type of appointment"
+         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#fff"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:background="@drawable/edittext_shape_two"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="full name"
+         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#fff"/>
+
+    <EditText
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:background="@drawable/edittext_shape_two"
+        android:gravity="top"
+        android:padding="15dp"
+        android:textColor="#000"
+        android:textStyle="normal"
+        android:hint="Appointment details"
+         />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#fff"/>
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded_green"
+        android:text="submit"
+        android:textColor="@android:color/white"
+        android:visibility="visible" />
+
+</LinearLayout>

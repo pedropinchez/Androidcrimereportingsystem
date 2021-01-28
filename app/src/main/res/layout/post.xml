@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentLeft="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/post_user_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/profile_placeholder"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/post_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="20dp"
+                android:text="User"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="75dp" />
+            
+
+            <TextView
+                android:id="@+id/post_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/post_username"
+                android:layout_below="@+id/post_username"
+                android:text="DD/MM/YYYY"
+                android:layout_alignLeft="@+id/post_username" />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_date"
+                android:gravity="top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/post_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/post_image"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/post_desc"
+                    android:layout_toEndOf="@+id/post_user_image"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    android:text="Title"
+                    android:textSize="18sp"
+                    android:layout_alignRight="@+id/post_image"
+                    android:layout_alignLeft="@+id/post_desc"
+                    android:layout_toRightOf="@+id/post_user_image" />
+                <TextView
+                    android:id="@+id/post_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/post_image"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/post_desc"
+                    android:layout_toEndOf="@+id/post_user_image"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    android:text="Time"
+                    android:textSize="18sp"
+                    android:layout_alignRight="@+id/post_image"
+                    android:layout_alignLeft="@+id/post_desc"
+                    android:layout_toRightOf="@+id/post_user_image" />
+                <TextView
+                    android:id="@+id/post_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/post_image"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/post_desc"
+                    android:layout_toEndOf="@+id/post_user_image"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    android:text="Time"
+                    android:textSize="18sp"
+                    android:layout_alignRight="@+id/post_image"
+                    android:layout_alignLeft="@+id/post_desc"
+                    android:layout_toRightOf="@+id/post_user_image" />
+                <TextView
+                    android:id="@+id/post_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    android:textSize="18sp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae Ipsum" />
+
+                <TextView
+                    android:id="@+id/post_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:textSize="18sp"
+                    android:paddingTop="8dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae Ipsum" />
+
+
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/post_delete_btn"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:text="Button"
+                android:visibility="invisible"
+                android:src="@drawable/ic_delete_accent"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

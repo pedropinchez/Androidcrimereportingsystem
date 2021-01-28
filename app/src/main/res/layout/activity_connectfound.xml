@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff8348d4">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|center_horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="90"
+                android:layout_height="match_parent"
+                android:background="#fff1f1f1">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20.0dip"
+                    android:text="Found"
+                    android:textColor="#ff000000"
+                    android:textSize="16.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20.0dip"
+                    android:padding="25.0dip"
+                    android:text="Below is the contact number of the person who found your Item. You may select one of the provided actions to reach them."
+                    android:textSize="18.0sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView5"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#ff000000"
+                    android:textSize="20.0sp" />
+
+                <TextView
+                    android:id="@+id/tt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10.0dip"
+                    android:text="Choose Action"
+                    android:textSize="17.0sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tt"
+                    android:layout_centerHorizontal="true"
+                    android:padding="25.0dip">
+
+                    <ImageView
+                        android:id="@+id/facebook"
+                        android:layout_width="30.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="20.0dip"
+                        android:scaleType="centerCrop"
+                        android:onClick="Call"
+                        android:src="@drawable/cal"
+                        android:layout_marginEnd="20.0dip" />
+
+                    <ImageView
+                        android:id="@+id/email"
+                        android:layout_width="30.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_toRightOf="@+id/facebook"
+                        android:scaleType="centerInside"
+                        android:onClick="message"
+                        android:src="@drawable/mmmm"
+                        android:layout_toEndOf="@+id/facebook"
+                        android:layout_marginStart="20.0dip" />
+
+                    <ImageView
+                        android:layout_width="30.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="40.0dip"
+                        android:onClick="Whatsapp"
+                        android:layout_toRightOf="@+id/email"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/whats"
+                        android:layout_marginStart="40.0dip"
+                        android:layout_toEndOf="@+id/email" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

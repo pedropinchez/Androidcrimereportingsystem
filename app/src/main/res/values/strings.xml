@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CrimeReportingApp</string>
+    <string name="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae Ipsum</string>
+    <string name="aboutus">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae Ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae Ipsum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae Ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae Ipsum
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae Ipsum.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae Ipsum
+    </string>
+    <string name="terms">1.Our  mission is to enhance crime reporting via the android mobile phone\n
+        2.You should provide correct information about yourself. Your information is safe with us \n
+        3.You might be contacted about the crimes you report.\n4.
+        4.We do not verify information posted by the user hence you are responsible for any misleading information \n<b>
+            * By accepting or using our services you agree to be bound by these terms.
+        If you disagree with any part of terms then you may not access the service</b> </string>
+    <string name="action_settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="tag">SecondFragment</string>
+    <string name="editprofile">EditProfile</string>
+</resources>

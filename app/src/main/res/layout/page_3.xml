@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/noitemfound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Item Found"
+        android:layout_centerInParent="true"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="7.0dip" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv"
+                android:paddingTop="7.0dip" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv2"
+                android:paddingTop="7.0dip" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv3"
+                android:paddingTop="7.0dip" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv4"
+                android:paddingTop="7.0dip" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rv5"
+                android:paddingTop="7.0dip"
+                android:layout_marginBottom="100dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

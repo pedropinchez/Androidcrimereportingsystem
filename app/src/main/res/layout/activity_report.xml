@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Kindly fill the correct information!"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+        <ProgressBar
+            android:id="@+id/add_post_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="invisible" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#fff"/>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Place of crime"
+         android:textColor="#000"
+         android:textSize="25sp"/>
+    <Spinner
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#fff"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type of crime"
+            android:textColor="#000"
+            android:textSize="25sp"/>
+        <Spinner
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp" />
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@drawable/edittext_shape_two"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="time of crime in 24hrs/s(1700pm)"
+            android:inputType="textPersonName" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#fff"/>
+
+        <EditText
+            android:id="@+id/crime"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edittext_shape_two"
+            android:gravity="top"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textStyle="normal"
+            android:hint="Enter crime details..."
+             />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#fff"/>
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edittext_shape_two"
+            android:gravity="top"
+            android:padding="15dp"
+            android:textColor="#000"
+            android:textStyle="normal"
+            android:hint="useful additional information..."
+           />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#fff"/>
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/submit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rounded_green"
+            android:text="submit"
+            android:textColor="@android:color/white"
+            android:visibility="visible" />
+        
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>
